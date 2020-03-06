@@ -1,17 +1,15 @@
-import express, { Response, Request } from "express";
+import express, { Application, Response, Request } from "express";
 import { CONFIG } from './config';
 
-// Create Express server
-const app = express();
+import { applyMiddlewareBeforeRoutes } from './middlewares';
+import { registerRoutes } from './routes';
+
+const app: Application = express();
 
 // Express configuration
 app.set("port", CONFIG.PORT);
 
-/**
- * Primary app routes.
- */
-app.get("/", function (req: Request, res: Response) {
-  return res.json({ success: true })
-});
+applyMiddlewareBeforeRoutes(app);
+registerRoutes(app);
 
 export default app;
