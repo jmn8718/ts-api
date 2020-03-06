@@ -1,6 +1,17 @@
 # ts-api
 
-Restful API developed with nodejs, typscript and docker.
+Restful API developed with nodejs, typescript and docker.
+
+## Requirements
+
+- nodejs
+- docker
+- docker-compose
+
+## Install
+
+- Install devDependencies `npm install --only=dev` for VSC
+- Start docker with `docker-compose up --build`
 
 ## references
 

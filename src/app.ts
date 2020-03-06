@@ -1,10 +1,11 @@
 import express, { Response, Request } from "express";
+import { CONFIG } from './config';
 
 // Create Express server
 const app = express();
 
 // Express configuration
-app.set("port", process.env.PORT || 3010);
+app.set("port", CONFIG.PORT);
 
 /**
  * Primary app routes.
