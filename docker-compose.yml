@@ -1,0 +1,19 @@
+version: '3'
+services:
+  server:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - PORT=3000
+      - NODE_ENV=development
+    entrypoint:
+      - npm
+      - run
+      - watch
+    ports: 
+      - 3000:3000
+    volumes:
+      - /app/node_modules
+      - /app/dist
+      - ./src:/app/src
