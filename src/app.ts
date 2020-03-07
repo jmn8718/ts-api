@@ -1,8 +1,8 @@
 import express, { Application } from "express";
-import { CONFIG } from './config';
+import { CONFIG } from "./config";
 
-import { applyMiddlewareBeforeRoutes, applyMiddlewareAfterRoutes } from './middlewares';
-import { registerRoutes } from './routes';
+import { applyMiddlewareBeforeRoutes, applyMiddlewareAfterRoutes } from "./middlewares";
+import { registerRoutes } from "./routes";
 
 const app: Application = express();
 

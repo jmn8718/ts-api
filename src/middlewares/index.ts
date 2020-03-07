@@ -1,11 +1,11 @@
-import { Application } from 'express'
-import morgan from 'morgan';
-import helmet from 'helmet';
+import { Application } from "express";
+import morgan from "morgan";
+import helmet from "helmet";
 import compression from "compression";
 import bodyParser from "body-parser";
 import errorHandler from "errorhandler";
 
-import { APP_CONFIG, CONFIG } from '../config';
+import { APP_CONFIG, CONFIG } from "../config";
 
 export function applyMiddlewareBeforeRoutes(app: Application) {
   app.use(morgan(APP_CONFIG.MORGAN_LEVEL));
@@ -16,8 +16,8 @@ export function applyMiddlewareBeforeRoutes(app: Application) {
 }
 
 export function applyMiddlewareAfterRoutes(app: Application) {
-  if (CONFIG.ENV === 'development') {
-    console.log('Register error handler middleware')
+  if (CONFIG.ENV === "development") {
+    console.log("Register error handler middleware");
     app.use(errorHandler());
   }
 }
