@@ -4,7 +4,8 @@ interface IEnvConfig {
 }
 
 interface IAppConfig {
-  MORGAN_LEVEL: string
+  MORGAN_LEVEL: string,
+  LOGGER_LEVEL: string
 }
 
 export const CONFIG: IEnvConfig = {
@@ -13,5 +14,6 @@ export const CONFIG: IEnvConfig = {
 }
 
 export const APP_CONFIG: IAppConfig = {
-  MORGAN_LEVEL: process.env.MORGAN_LEVEL || CONFIG.ENV === 'production' ? 'combined' : 'dev'
+  MORGAN_LEVEL: process.env.MORGAN_LEVEL || CONFIG.ENV === 'production' ? 'combined' : 'dev',
+  LOGGER_LEVEL: process.env.LOGGER_LEVEL || 'trace'
 }

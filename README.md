@@ -22,7 +22,7 @@ Restful API developed with nodejs, typescript and docker.
 - [x] setup folder for routes
 - [ ] add routes
 - [ ] add authentication
-- [ ] (optional) setup logger
+- [x] (optional) setup logger
 - [ ] building scripts for production
 - [ ] (optional) add nginx as a proxy for local development
 - [ ] (optional) setup swagger
@@ -35,3 +35,7 @@ Restful API developed with nodejs, typescript and docker.
 - https://medium.com/better-programming/create-an-express-server-using-typescript-dec8a51e7f8d
 - https://developer.okta.com/blog/2018/11/15/node-express-typescript
 - https://www.hebergb.com/docker-node-typescript
+
+## Modules
+
+- https://getpino.io/#/docs/api
