@@ -27,11 +27,13 @@ Restful API developed with nodejs, typescript and docker.
 - [ ] (optional) add nginx as a proxy for local development
 - [ ] (optional) setup swagger
 - [ ] Include test
+- [ ] add debugger for docker
 
 ## references
 
 - https://github.com/microsoft/TypeScript-Node-Starter
 - https://github.com/microsoft/vscode-recipes/tree/master/Docker-TypeScript
+- https://docs.docker.com/compose/extends/
 - https://medium.com/better-programming/create-an-express-server-using-typescript-dec8a51e7f8d
 - https://developer.okta.com/blog/2018/11/15/node-express-typescript
 - https://www.hebergb.com/docker-node-typescript
