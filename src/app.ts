@@ -1,7 +1,7 @@
-import express, { Application, Response, Request } from "express";
+import express, { Application } from "express";
 import { CONFIG } from './config';
 
-import { applyMiddlewareBeforeRoutes } from './middlewares';
+import { applyMiddlewareBeforeRoutes, applyMiddlewareAfterRoutes } from './middlewares';
 import { registerRoutes } from './routes';
 
 const app: Application = express();
@@ -11,5 +11,6 @@ app.set("port", CONFIG.PORT);
 
 applyMiddlewareBeforeRoutes(app);
 registerRoutes(app);
+applyMiddlewareAfterRoutes(app);
 
 export default app;

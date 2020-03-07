@@ -18,13 +18,15 @@ Restful API developed with nodejs, typescript and docker.
 - [x] setup docker
 - [X] fix initial setup that fails as dist folder does not exists, it should wait
 - [x] setup folder for middlewares
-- [ ] add middlewares
+- [x] add middlewares
 - [x] setup folder for routes
 - [ ] add routes
-- [ ] add authentications
-- [ ] (optional) save logs
+- [ ] add authentication
+- [ ] (optional) setup logger
 - [ ] building scripts for production
 - [ ] (optional) add nginx as a proxy for local development
+- [ ] (optional) setup swagger
+- [ ] Include test
 
 ## references
 
