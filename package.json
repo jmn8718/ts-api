@@ -13,7 +13,10 @@
     "watch-ts": "tsc -w",
     "test": "jest --forceExit --coverage --verbose --detectOpenHandles",
     "watch-test": "npm run test -- --watchAll",
-    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix"
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
+    "build": "tsc",
+    "preserve": "npm run build",
+    "serve": "node dist/server.js"
   },
   "repository": {
     "type": "git",
